@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE9F39D5-2767-4984-AF63-31E6AEB6D4F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CalculosGeometricos</RootNamespace>
+    <AssemblyName>CalculosGeometricos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArea.Designer.cs">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcalculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcalculos.Designer.cs">
+      <DependentUpon>Frmcalculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmperimetros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmperimetros.Designer.cs">
+      <DependentUpon>frmperimetros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmvolumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvolumen.Designer.cs">
+      <DependentUpon>frmvolumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArea.resx">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcalculos.resx">
+      <DependentUpon>Frmcalculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmperimetros.resx">
+      <DependentUpon>frmperimetros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvolumen.resx">
+      <DependentUpon>frmvolumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangulo isoceles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangulo escaleno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pentagono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octagono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapecio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuadrado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangulo equilatero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piramide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cilindro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuadrado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangulo equilatero1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pentagono1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapecio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piramide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cilindro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangulo isoceles1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangulo escaleno1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octagono1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
